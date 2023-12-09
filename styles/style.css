@@ -2,7 +2,7 @@
 
 .page {
   color: var(--text-color);
-  font-family: var(--main-font, "Courier New", Courier, sans-serif);
+  font-family: var(--main-font, "Courier New",  monospace);
   font-size: var(--text-size);
   line-height: 130%;
   background-color: var(--bg-color);
@@ -117,9 +117,9 @@
   pointer-events: none;
 }
 
-.title-one {
-  color: var(--title-color, #db00ff);
+.title-big {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--title-color, #db00ff);
   font-weight: 700;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   line-height: 96px;
@@ -212,13 +212,12 @@
 }
 
 .footer {
-  display: grid;
   position: relative;
-  height: 100vh;
+  display: grid;
   place-content: center;
+  height: 100vh;
   min-height: 668px;
-  
-  
+
 }
 
 .footer__title {
@@ -334,7 +333,7 @@
     grid-auto-flow: column;
   }
 
-  .title-one {
+  .title-big {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -343,7 +342,7 @@
   }
 
   .lowconcentrated__list {
-    grid-column: 3/4;
+    grid-column: 2/4;
   }
 
   .reduce-concentration {
