@@ -14,8 +14,8 @@
 }
 
 .header {
-  display: grid;
   position: relative;
+  display: grid;
   grid-template-rows: 1fr auto 1fr;
   block-size: 100vh;
   min-block-size: 668px;
@@ -131,11 +131,10 @@
 }
 
 .title-decor {  /*цвет и  фон для всех похожих эл*/
-  color: var(--title-decor-color, #000028);
-  background-color: var(--accent-color, #ff0070);
   font-size: inherit;
   font-weight: 700;
-  
+  color: var(--title-decor-color, #000028);
+  background-color: var(--accent-color, #ff0070); 
 }
 
 .content {
@@ -149,6 +148,12 @@
   gap: 20px;
 }
 
+.heading {
+  color: var(--decoration-color, #ff0070);
+  font-size: inherit;
+  font-weight: 700;
+}
+
 .list { 
   display: grid;
   gap: 20px;
@@ -158,13 +163,6 @@
   display: grid;
   gap: 10px;
 }
-.heading {
-  color: var(--decoration-color, #ff0070);
-  font-size: inherit;
-  font-weight: 700;
-}
-
-
 
 .card__link {
   text-decoration: none;
@@ -204,11 +202,10 @@
 }
 
 .pictures__card {
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
-  
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .footer {
@@ -217,7 +214,6 @@
   place-content: center;
   height: 100vh;
   min-height: 668px;
-
 }
 
 .footer__title {
@@ -269,7 +265,7 @@
     padding: 60px 20px;
   }
 
-  .concentrated {
+  .lowconcentrated {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -352,6 +348,10 @@
   .reduce-concentration__list {
     grid-template-columns: repeat(3, 1fr);
     grid-column: 1/4;
+  }
+
+  .recomendations {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .recomendations__card {
